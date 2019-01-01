@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+
+export PKG_CONFIG_PATH = "${CURDIR}/debian/vte-static/lib/pkgconfig"
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	dh_auto_clean
+	cd vte-ng-0.54.2.a; make clean
+	rm -rf vte-ng-0.54.2.a/config.log
+	rm -rf "${CURDIR}/debian/vte-static"
+
+override_dh_auto_configure:
+	# termite doesn't actually have a configure script so we'll use this to build a static vte-ng
+	cd vte-ng-0.54.2.a; NOCONFIGURE=1 sh autogen.sh
+	cd vte-ng-0.54.2.a; ./configure \
+		--prefix="$(CURDIR)/debian/vte-static" \
+		--localedir="$(CURDIR)/debian/vte-static/locale" \
+		--enable-static \
+		--disable-shared \
+		enable_introspection=no \
+		enable_vala=no \
+		--disable-gtk-doc \
+		--disable-glade-catalogue
+	cd vte-ng-0.54.2.a; make -C src sources install-exec install-data -j 1 # makefile bug does not allow -j
+	cd vte-ng-0.54.2.a; make install-pkgconfigDATA
+
+override_dh_auto_build:
+	PKG_CONFIG_PATH="${CURDIR}/debian/vte-static/lib/pkgconfig" make -j4 "INSTALL=install --strip-program=true"
+

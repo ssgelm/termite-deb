@@ -1,0 +1,6 @@
+termite for Debian
+-----------------
+
+This package is built with a statically compiled vte-ng due to the complexity around packaging it alongside vte2.91.
+
+ -- Stephen Gelman <ssgelm@debian.org>  Tue, 01 Jan 2019 02:37:16 -0600

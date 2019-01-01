@@ -1,0 +1,5 @@
+termite (14-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Stephen Gelman <ssgelm@debian.org>  Tue, 01 Jan 2019 02:37:16 -0600

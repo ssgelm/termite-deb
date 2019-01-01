@@ -1,0 +1,7 @@
+--- a/vte-ng-0.54.2.a/src/Makefile.am
++++ b/vte-ng-0.54.2.a/src/Makefile.am
+@@ -440,3 +440,4 @@
+ .DELETE_ON_ERROR:
+ 
+ -include $(top_srcdir)/git.mk
++sources: $(BUILT_SOURCES)
