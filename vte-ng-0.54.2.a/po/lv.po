@@ -1,0 +1,104 @@
+# translation of lv.po to Latvian
+# Latvian translation for VTE.
+# Copyright © 2006 Gnome i18n Project for Latvian.
+#
+# Artis Trops <hornet@navigator.lv>, 2002.
+# Raivis Dejus <orvils@gmail.com>, 2006.
+# Peteris Krisjanis <pecisk@gmail.com>, 2009.
+# Rudolfs <rudolfs.mazurs@gmail.com>, 2011, 2016, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: lv\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/vte/issues\n"
+"POT-Creation-Date: 2018-06-20 20:20+0000\n"
+"PO-Revision-Date: 2018-08-31 21:06+0200\n"
+"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 :"
+" 2);\n"
+"X-Generator: Lokalize 2.0\n"
+
+#. Translators: %s is replaced with error message returned by strerror().
+#: ../src/vte.cc:3966
+#, c-format
+msgid "Error reading from child: %s."
+msgstr "Kļūda lasot no bērna: %s."
+
+#: ../src/vte.cc:4122
+#, c-format
+msgid "Error (%s) converting data for child, dropping."
+msgstr "Kļūda (%s) konvertējot datus bērnam, pamet."
+
+#: ../src/vte.cc:8179
+msgid "WARNING"
+msgstr "BRĪDINĀJUMS"
+
+#: ../src/vte.cc:8180
+#| msgid "GNUTLS not enabled; data will be written to disk unencrypted!"
+msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
+msgstr "GnuTLS nav ieslēgti; dati diskā tiks ierakstīti nešifrēti!"
+
+#: ../src/vtegtk.cc:3618
+#, c-format
+msgid "Unable to convert characters from %s to %s."
+msgstr "Neiespējami pārveidot rakstzīmes no %s uz %s."
+
+#~ msgid "Attempt to set invalid NRC map '%c'."
+#~ msgstr "Mēģinājums iestatīt nederīgu NRC karti '%c'."
+
+#~ msgid "Unrecognized identified coding system."
+#~ msgstr "Neatpazīta identificētā kodēšanas sistēma."
+
+#~ msgid "Attempt to set invalid wide NRC map '%c'."
+#~ msgstr "Mēģinājums iestatīt nederīgu plato NRC karti '%c'."
+
+#~ msgid "can not run %s"
+#~ msgstr "nevar palaist %s"
+
+#~ msgid "Duplicate (%s/%s)!"
+#~ msgstr "Dublikāts (%s/%s)!"
+
+#~ msgid "Could not open console.\n"
+#~ msgstr "Nevarēja atvērt konsoli.\n"
+
+#~ msgid "Could not parse the geometry spec passed to --geometry"
+#~ msgstr "Nevarēja parsēt ģeometrijas specifikāciju, kas nodota --geometry"
+
+#~ msgid "Error compiling regular expression \"%s\"."
+#~ msgstr "Kļūda kompilējot parasto izteiksmi \"%s\"."
+
+#~ msgid "Unable to send data to child, invalid charset convertor"
+#~ msgstr ""
+#~ "Nespēj nosūtīt datus bērnam, nepareizs rakstzīmju kopas pārveidotājs"
+
+#~| msgid "Error reading PTY size, using defaults: %s."
+#~ msgid "Error reading PTY size, using defaults: %s\n"
+#~ msgstr "Kļūda, lasot PTY izmēru, lieto noklusētos: %s.\n"
+
+#~ msgid "_vte_conv_open() failed setting word characters"
+#~ msgstr "_vte_conv_open() avarēja iestatot vārdu rakstzīmes"
+
+#~ msgid "Error adding `%s' to environment, continuing."
+#~ msgstr "Kļūda pievienojot `%s' videi, turpinu."
+
+#~ msgid "Error creating signal pipe."
+#~ msgstr "Kļūda izveidojot signāla programkanālu."
+
+#~ msgid "No handler for control sequence `%s' defined."
+#~ msgstr "Nav definēts apdarinātājs kontroles secībai `%s'."
+
+#~ msgid "Error setting PTY size: %s."
+#~ msgstr "Kļūda iestatot PTY izmēru: %s."
+
+#~ msgid "Got unexpected (key?) sequence `%s'."
+#~ msgstr "Saņemta negaisīta virkne (atslēga?) `%s'."
+
+#~ msgid "Unknown pixel mode %d.\n"
+#~ msgstr "Nezināms pikseļu režīms %d.\n"
+
+#~ msgid "Can not draw character U+%04x.\n"
+#~ msgstr "Nevaru uzzīmēt simbolu U+%04x.\n"
